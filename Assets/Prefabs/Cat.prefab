@@ -108,7 +108,8 @@ MonoBehaviour:
   pathIntermediate: Cat/06DrumMid
   pathDown: Cat/06DrumDown
   frames: 19
-  fps: 19
+  polyrhythm: 2
+  bpm: 60
   intermediateStateDuration: 0.1
   floatingTextSpawner: {fileID: 0}
   hitToleranceMs: 150

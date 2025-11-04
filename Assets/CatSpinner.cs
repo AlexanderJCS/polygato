@@ -9,10 +9,12 @@ public class CatSpinner : MonoBehaviour
     [SerializeField] private string pathIntermediate;
     [SerializeField] private string pathDown;
     [SerializeField] private int frames;
-    [SerializeField] private float fps = 60;
+    [SerializeField] private float polyrhythm;
+    [SerializeField] private float bpm;
     [SerializeField] private float intermediateStateDuration = 0.1f;
     [SerializeField] private FloatingTextSpawner floatingTextSpawner;
     [SerializeField] private float hitToleranceMs = 100f;
+    private float fps;
     private Sprite[] spritesUp;
     private Sprite[] spritesIntermediate;
     private Sprite[] spritesDown;
@@ -25,6 +27,7 @@ public class CatSpinner : MonoBehaviour
     
     private void Start()
     {
+        fps = (bpm / 60f) * (polyrhythm / 2f) * frames;
         startTime = Time.time;
         audioSource = GetComponent<AudioSource>();
         transform = GetComponent<Transform>();
