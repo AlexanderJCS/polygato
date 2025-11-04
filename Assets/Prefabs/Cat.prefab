@@ -109,7 +109,7 @@ MonoBehaviour:
   pathDown: Cat/06DrumDown
   frames: 19
   polyrhythm: 2
-  bpm: 60
+  bpm: 40
   intermediateStateDuration: 0.1
   floatingTextSpawner: {fileID: 0}
   hitToleranceMs: 150
@@ -125,7 +125,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 50eb657ba3f91e6498d036d68c42120b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

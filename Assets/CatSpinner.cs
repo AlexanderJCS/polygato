@@ -24,6 +24,7 @@ public class CatSpinner : MonoBehaviour
     private Transform transform;
     private AudioSource audioSource;
     private float startTime;
+    private bool activated = true;
     
     private void Start()
     {
@@ -44,6 +45,17 @@ public class CatSpinner : MonoBehaviour
         }
     }
 
+    public void ActivateCat()
+    {
+        startTime = Time.time;
+        activated = true;
+    }
+
+    public void DeactivateCat()
+    {
+        activated = false;
+    }
+    
     public void SetPressed(bool down)
     {
         pressed = down;
@@ -57,6 +69,8 @@ public class CatSpinner : MonoBehaviour
 
     private void Hit()
     {
+        if (!activated) return;
+        
         float time = Time.time - startTime;
         float rotationInterval = frames / fps;
 
@@ -80,6 +94,11 @@ public class CatSpinner : MonoBehaviour
     
     private void Update()
     {
+        if (!activated)
+        {
+            spriteRenderer.sprite = spritesUp[0];
+        }
+        
         ref Sprite[] spritesCurrent = ref spritesUp;
         if (Time.time - pressTime < intermediateStateDuration)
         {
