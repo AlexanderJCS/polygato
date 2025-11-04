@@ -4,7 +4,6 @@ using UnityEngine.InputSystem;
 public class InputManager : MonoBehaviour
 {
     [SerializeField] private InputActionMap inputs;
-    [SerializeField] private AudioClip[] buttonSounds;
     [SerializeField] private CatSpinner[] cats;
 
     private void Start()
