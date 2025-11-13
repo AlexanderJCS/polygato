@@ -7,16 +7,31 @@ public class HealthManager : MonoBehaviour
     [SerializeField] private float hitIncrease = 0.1f;
     [SerializeField] private float missDecrease = 0.1f;
     [SerializeField] private BarManager barManager;
-    
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+
+    private void Start()
     {
-        
+        barManager.percent = health;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void IncrementHealth(float increment)
     {
-        
+        health = Mathf.Clamp(health + increment, 0f, 1f);
+        barManager.percent = health;
+    }
+    
+    public void Hit()
+    {
+        IncrementHealth(hitIncrease);
+    }
+    
+    public void Miss()
+    {
+        IncrementHealth(-missDecrease);
+    }
+
+    private void Update()
+    {
+        Debug.Log(health);
+        IncrementHealth(-decreaseRate * Time.deltaTime);
     }
 }

@@ -107,10 +107,10 @@ MonoBehaviour:
   pathUp: Cat/06DrumUp
   pathIntermediate: Cat/06DrumMid
   pathDown: Cat/06DrumDown
-  frames: 19
+  frames: 120
   polyrhythm: 2
   bpm: 40
-  intermediateStateDuration: 0.1
+  intermediateStateDuration: 0.025
   floatingTextSpawner: {fileID: 0}
   hitToleranceMs: 150
 --- !u!82 &533684232578973869
