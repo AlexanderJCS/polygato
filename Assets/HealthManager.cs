@@ -31,7 +31,6 @@ public class HealthManager : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(health);
         IncrementHealth(-decreaseRate * Time.deltaTime);
     }
 }
