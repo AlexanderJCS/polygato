@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -38,23 +39,43 @@ public class GameManager : MonoBehaviour
         
         beatScript.PlayBeat();
         
-        foreach (var level in levels)
+        for (int levelIdx = 0;  levelIdx < levels.Length; levelIdx++)
         {
+            bool[] level = levels[levelIdx];
+            bool[] nextLevel = levels[Math.Min(levelIdx + 1, level.Length)];
+            
             Debug.Log("new level!");
-            for (int i = 0; i < level.Length; i++)
+            for (int catIdx = 0; catIdx < catsList.GetCats().Length; catIdx++)
             {
-                if (catsList.GetCats()[i] == null)
+                Debug.Log("CatIdx: " + catIdx);
+                if (catsList.GetCats()[catIdx] == null)
                 {
+                    Debug.LogWarning("Cat Idx " + catIdx + " is null!");
                     continue;
                 }
                 
-                if (level[i])
+                // Activate them for playing
+                if (level[catIdx])
                 {
-                    catsList.GetCats()[i].ActivateCat();
+                    Debug.Log(catIdx + " is playing");
+                    catsList.GetCats()[catIdx].ActivateCat();
+                    continue;
+                }
+                
+                // Cat is not playing
+                catsList.GetCats()[catIdx].DeactivateCat();
+                
+                
+                // Preview the cats playing next round
+                if (nextLevel[catIdx])
+                {
+                    Debug.Log("Showing cat " + catIdx);
+                    catsList.GetCats()[catIdx].Show();
                 }
                 else
                 {
-                    catsList.GetCats()[i].DeactivateCat();
+                    Debug.Log("Hiding cat " + catIdx);
+                    catsList.GetCats()[catIdx].Hide();
                 }
             }
 

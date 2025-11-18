@@ -47,8 +47,19 @@ public class CatSpinner : MonoBehaviour
         }
     }
 
+    public void Show()
+    {
+        spriteRenderer.color = new Color(1f, 1f, 1f, 1f);
+    }
+
+    public void Hide()
+    {
+        spriteRenderer.color = new Color(0.05f, 0.05f, 0.05f, 1f);
+    }
+    
     public void ActivateCat()
     {
+        Show();
         startTime = Time.time;
         activated = true;
     }
