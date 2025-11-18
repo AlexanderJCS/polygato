@@ -46,6 +46,8 @@ public class CatSpinner : MonoBehaviour
             spritesIntermediate[i] = Resources.Load<Sprite>($"{pathIntermediate}/{(i + 1).ToString("D4")}");
             spritesDown[i] = Resources.Load<Sprite>($"{pathDown}/{(i + 1).ToString("D4")}");
         }
+        
+        DeactivateCat();
     }
 
     public void Show()

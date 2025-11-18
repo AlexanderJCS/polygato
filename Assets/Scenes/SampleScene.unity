@@ -610,6 +610,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf169293016894f6aa5dd44c413c9305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  clips:
+  - {fileID: 8300000, guid: 3b5fbb249845c487d90e6e1a7a4a6085, type: 3}
+  - {fileID: 8300000, guid: 98ef9cae8e16b43c384ee387cbc8d638, type: 3}
+  - {fileID: 8300000, guid: 405f17e6f9043498a888320774b77c53, type: 3}
 --- !u!82 &711204136
 AudioSource:
   m_ObjectHideFlags: 0
@@ -815,7 +819,7 @@ PrefabInstance:
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 18d4effd8b2414bbeae7a5cb86e8442c, type: 3}
+      objectReference: {fileID: 8300000, guid: 8286fb6ddff534e2eb13ab2a04383b3a, type: 3}
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -1013,7 +1017,7 @@ PrefabInstance:
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 18d4effd8b2414bbeae7a5cb86e8442c, type: 3}
+      objectReference: {fileID: 8300000, guid: 9091a9ceb005740c8b2490d463b4eb06, type: 3}
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -1157,7 +1161,7 @@ PrefabInstance:
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 4207769b0facf41cfa48aeb2ef83e85e, type: 3}
+      objectReference: {fileID: 8300000, guid: d5fe97af7e5b84e76b69846b4afc6139, type: 3}
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -1323,7 +1327,7 @@ PrefabInstance:
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 31bebe749d62345b8b04100ed03d9163, type: 3}
+      objectReference: {fileID: 8300000, guid: 6f447b6961b714475ae0fa57086f66e5, type: 3}
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0
@@ -1770,7 +1774,7 @@ PrefabInstance:
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: abe2d7b2fda654d49b8ce97566b647a8, type: 3}
+      objectReference: {fileID: 8300000, guid: de122809de01f4e5280558caaefd7cf1, type: 3}
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_PlayOnAwake
       value: 0

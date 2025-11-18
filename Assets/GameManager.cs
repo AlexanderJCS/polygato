@@ -11,36 +11,48 @@ public class GameManager : MonoBehaviour
     
     private bool[][] levels = new[]
     {
-        new[] { true, false, false, false, false },
-        new[] { false, true, false, false, false },
-        new[] { true, true, false, false, false },
-        new[] { false, false, true, false, false },
-        new[] { true, false, true, false, false },
-        new[] { true, true, true, false, false },
-        new[] { false, false, false, true, false },
-        new[] { true, false, false, true, false },
-        new[] { false, true, false, true, false },
-        new[] { false, false, true, true, false },
-        new[] { true, true, false, true, false },
-        new[] { true, false, true, true, false },
-        new[] { false, true, true, true, false },
-        new[] { true, true, true, true, false },
-        new[] { true, true, true, true, true }
+        new[] { true, false, false, false, false },  // 2
+        new[] { false, true, false, false, false },  // 3
+        new[] { true, true, false, false, false },   // 2:3
+        new[] { false, false, true, false, false },  // 4
+        new[] { true, false, true, false, false },   // 2:4
+        new[] { true, true, true, false, false },    // 2:3:4
+        new[] { false, false, false, true, false },  // 5
+        new[] { true, false, false, true, false },   // 2:5
+        new[] { false, true, false, true, false },   // 3:5
+        new[] { false, false, true, true, false },   // 4:5
+        new[] { true, true, false, true, false },    // 2:3:5
+        new[] { true, false, true, true, false },    // 2:4:5
+        new[] { false, true, true, true, false },    // 3:4:5
+        new[] { true, true, true, true, false },     // 2:3:4:5
+        new[] { true, true, true, true, true }       // 2:3:4:5:6
+    };
+
+    // 0 - 3:2 music track
+    // 1 - 5:2 music track
+    // 2 - 2:3:4:5:6 music track
+    private int[] musicPerLevel = new[]
+    {
+        0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 2, 2
     };
 
     IEnumerator GameCoroutine()
     {
         yield return new WaitForSeconds(0.1f);  // wait for beatscript to initialize
-        beatScript.PlayBeat();  // load the beat into memory so it plays immediately
+        beatScript.PlayBeat(0);  // load the beat into memory so it plays immediately
+        yield return new WaitForSeconds(0.02f);
+        beatScript.PlayBeat(1);  // load the beat into memory so it plays immediately
+        yield return new WaitForSeconds(0.02f);
+        beatScript.PlayBeat(2);  // load the beat into memory so it plays immediately
         yield return new WaitForSeconds(0.02f);
         beatScript.StopBeat();
         
         yield return new WaitForSeconds(0.1f);
         
-        beatScript.PlayBeat();
-        
         for (int levelIdx = 0;  levelIdx < levels.Length; levelIdx++)
         {
+            beatScript.PlayBeat(musicPerLevel[levelIdx]);
+            
             bool[] level = levels[levelIdx];
             bool[] nextLevel = levels[Math.Min(levelIdx + 1, level.Length)];
             
@@ -79,7 +91,7 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-            yield return new WaitForSeconds(timePerLevel);
+            yield return new WaitForSeconds(timePerLevel * 2);
         }
         
         beatScript.StopBeat();
