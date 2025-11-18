@@ -10,9 +10,21 @@ public class GameManager : MonoBehaviour
     
     private bool[][] levels = new[]
     {
-        new[] { true, false, false, false, true },
+        new[] { true, false, false, false, false },
         new[] { false, true, false, false, false },
-        new[] { true, true, false, false, false }
+        new[] { true, true, false, false, false },
+        new[] { false, false, true, false, false },
+        new[] { true, false, true, false, false },
+        new[] { true, true, true, false, false },
+        new[] { false, false, false, true, false },
+        new[] { true, false, false, true, false },
+        new[] { false, true, false, true, false },
+        new[] { false, false, true, true, false },
+        new[] { true, true, false, true, false },
+        new[] { true, false, true, true, false },
+        new[] { false, true, true, true, false },
+        new[] { true, true, true, true, false },
+        new[] { true, true, true, true, true }
     };
 
     IEnumerator GameCoroutine()
