@@ -164,9 +164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   health: 1
-  decreaseRate: 0.025
+  decreaseRate: 0.015
   hitIncrease: 0.1
-  missDecrease: 0.06
+  missDecrease: 0.03
   barManager: {fileID: 1165022350}
 --- !u!1 &295888912
 GameObject:
@@ -837,6 +837,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 216251155}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: hitToleranceMs
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: floatingTextSpawner
       value: 
       objectReference: {fileID: 2074666253}
@@ -1031,6 +1035,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 216251155}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: hitToleranceMs
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: floatingTextSpawner
       value: 
       objectReference: {fileID: 2074666253}
@@ -1170,6 +1178,10 @@ PrefabInstance:
       propertyPath: healthManager
       value: 
       objectReference: {fileID: 216251155}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: hitToleranceMs
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: floatingTextSpawner
       value: 
@@ -1332,6 +1344,10 @@ PrefabInstance:
       propertyPath: healthManager
       value: 
       objectReference: {fileID: 216251155}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: hitToleranceMs
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: floatingTextSpawner
       value: 
@@ -1775,6 +1791,10 @@ PrefabInstance:
       propertyPath: healthManager
       value: 
       objectReference: {fileID: 216251155}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: hitToleranceMs
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: floatingTextSpawner
       value: 

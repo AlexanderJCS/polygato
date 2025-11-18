@@ -14,6 +14,7 @@ public class CatSpinner : MonoBehaviour
     [SerializeField] private float intermediateStateDuration = 0.1f;
     [SerializeField] private FloatingTextSpawner floatingTextSpawner;
     [SerializeField] private float hitToleranceMs = 100f;
+    [SerializeField] private float missToleranceMultiplier = 2.0f;
     [SerializeField] private HealthManager healthManager;
     private int lastJudgedRotation = -1; // Track which rotation beat was last judged to prevent double-punishing
     private float fps;
@@ -62,11 +63,13 @@ public class CatSpinner : MonoBehaviour
         Show();
         startTime = Time.time;
         activated = true;
+        lastJudgedRotation = -1; // Reset judgment tracking when cat is activated
     }
 
     public void DeactivateCat()
     {
         activated = false;
+        lastJudgedRotation = -1; // Reset judgment tracking when cat is deactivated
     }
     
     public void SetPressed(bool down)
@@ -137,7 +140,7 @@ public class CatSpinner : MonoBehaviour
         int currentRotation = Mathf.RoundToInt(time / rotationInterval);
         float expectedHitTime = currentRotation * rotationInterval;
         float timeSincePerfectHit = time - expectedHitTime;
-        float toleranceSeconds = hitToleranceMs / 2000f; // Convert ms to seconds
+        float toleranceSeconds = hitToleranceMs / 2000f * missToleranceMultiplier; // Convert ms to seconds
         
         // If we're past the tolerance window and haven't judged this rotation yet, it's a miss
         if (timeSincePerfectHit > toleranceSeconds && lastJudgedRotation < currentRotation)
