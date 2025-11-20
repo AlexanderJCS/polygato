@@ -362,7 +362,7 @@ MonoBehaviour:
 
     ESCAPE TO RAGE QUIT
 
-    ANY KEY FOR MAIN MENU'
+    ENTER FOR MAIN MENU'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 651cb333a3efc49d2a3dff119f7ed022, type: 2}
   m_sharedMaterial: {fileID: -8237989744470129251, guid: 651cb333a3efc49d2a3dff119f7ed022, type: 2}
