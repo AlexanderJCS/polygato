@@ -8,5 +8,5 @@ public enum GameMode
 
 public static class GameGameMode
 {
-    public static GameMode gameMode = GameMode.FREESTYLE;
+    public static GameMode gameMode = GameMode.NORMAL;
 }

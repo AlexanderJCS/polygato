@@ -48,6 +48,7 @@ public class CatSpinner : MonoBehaviour
         }
         
         DeactivateCat();
+        Hide();
     }
 
     public void Show()

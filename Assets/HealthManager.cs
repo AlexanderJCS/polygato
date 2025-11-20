@@ -15,7 +15,7 @@ public class HealthManager : MonoBehaviour
 
     private void IncrementHealth(float increment)
     {
-        if (GameGameMode.gameMode != GameMode.FREESTYLE)
+        if (GameGameMode.gameMode == GameMode.FREESTYLE)
         {
             return;
         }

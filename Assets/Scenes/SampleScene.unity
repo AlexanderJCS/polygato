@@ -166,7 +166,7 @@ MonoBehaviour:
   health: 1
   decreaseRate: 0.015
   hitIncrease: 0.025
-  missDecrease: 0.05
+  missDecrease: 0.0625
   barManager: {fileID: 1165022350}
 --- !u!1 &295888912
 GameObject:
