@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
                 }
                 
                 // Activate them for playing
-                if (level[catIdx])
+                if (level[catIdx] || GameGameMode.gameMode == GameMode.FREESTYLE)
                 {
                     Debug.Log(catIdx + " is playing");
                     catsList.GetCats()[catIdx].ActivateCat();

@@ -165,8 +165,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   health: 1
   decreaseRate: 0.015
-  hitIncrease: 0.1
-  missDecrease: 0.03
+  hitIncrease: 0.025
+  missDecrease: 0.05
   barManager: {fileID: 1165022350}
 --- !u!1 &295888912
 GameObject:
@@ -1634,8 +1634,24 @@ MonoBehaviour:
       m_Action: 1
       m_Flags: 0
     - m_Name: 
+      m_Id: 9834c6fd-7c23-4720-b24c-e49d18437598
+      m_Path: <Keyboard>/semicolon
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 1
+      m_Flags: 0
+    - m_Name: 
       m_Id: 9a839719-5630-4304-9374-4d906fa4c1f4
       m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 2
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 36c0c8b6-3995-48c2-8326-9157501af401
+      m_Path: <Keyboard>/l
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -1650,8 +1666,24 @@ MonoBehaviour:
       m_Action: 3
       m_Flags: 0
     - m_Name: 
+      m_Id: 455cc859-d570-4542-bfba-7f15429dccd1
+      m_Path: <Keyboard>/k
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 3
+      m_Flags: 0
+    - m_Name: 
       m_Id: 1b206ae7-f1e4-466d-a10a-9c44ad87ad95
       m_Path: <Keyboard>/f
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: 4
+      m_Flags: 0
+    - m_Name: 
+      m_Id: 6f5b242c-d713-4289-b5f0-617eac95239d
+      m_Path: <Keyboard>/j
       m_Interactions: 
       m_Processors: 
       m_Groups: 

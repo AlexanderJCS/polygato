@@ -15,6 +15,11 @@ public class HealthManager : MonoBehaviour
 
     private void IncrementHealth(float increment)
     {
+        if (GameGameMode.gameMode != GameMode.FREESTYLE)
+        {
+            return;
+        }
+        
         health = Mathf.Clamp(health + increment, 0f, 1f);
         barManager.percent = health;
     }

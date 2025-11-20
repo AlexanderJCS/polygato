@@ -96,7 +96,7 @@ public class CatSpinner : MonoBehaviour
         float expectedHitTime = currentRotation * rotationInterval;
         float deltaMs = (expectedHitTime - time) * 1000;
         
-        if (Mathf.Abs(deltaMs) <= hitToleranceMs / 2)
+        if (Mathf.Abs(deltaMs) <= hitToleranceMs / 2 || GameGameMode.gameMode == GameMode.FREESTYLE)
         {
             audioSource.PlayOneShot(audioSource.clip);
             floatingTextSpawner.SpawnText(transform.position + Vector3.up, $"Hit!", Color.green);
@@ -138,18 +138,43 @@ public class CatSpinner : MonoBehaviour
         float time = Time.time - startTime;
         float rotationInterval = frames / fps;
         
-        // Auto-miss logic: check if we've passed the hit window for a rotation without judging it
         int currentRotation = Mathf.RoundToInt(time / rotationInterval);
         float expectedHitTime = currentRotation * rotationInterval;
         float timeSincePerfectHit = time - expectedHitTime;
         float toleranceSeconds = hitToleranceMs / 2000f * missToleranceMultiplier; // Convert ms to seconds
         
-        // If we're past the tolerance window and haven't judged this rotation yet, it's a miss
-        if (timeSincePerfectHit > toleranceSeconds && lastJudgedRotation < currentRotation)
+        // Autoplay logic: automatically hit perfectly at the right time
+        if (GameGameMode.gameMode == GameMode.AUTOPLAY)
         {
-            healthManager.Miss();
-            floatingTextSpawner.SpawnText(transform.position + Vector3.up, $"Missed!", Color.red);
-            lastJudgedRotation = currentRotation;
+            // Check if we've reached a new rotation that hasn't been judged yet
+            if (lastJudgedRotation < currentRotation && timeSincePerfectHit >= 0 && timeSincePerfectHit < Time.deltaTime)
+            {
+                // Trigger automatic perfect hit
+                audioSource.PlayOneShot(audioSource.clip);
+                floatingTextSpawner.SpawnText(transform.position + Vector3.up, $"Hit!", Color.green);
+                healthManager.Hit();
+                lastJudgedRotation = currentRotation;
+                
+                // Simulate press animation
+                pressed = true;
+                pressTime = Time.time;
+            }
+            // Reset pressed state after intermediate duration
+            else if (Time.time - pressTime > intermediateStateDuration)
+            {
+                pressed = false;
+            }
+        }
+        else if (GameGameMode.gameMode == GameMode.NORMAL)
+        {
+            // Auto-miss logic: check if we've passed the hit window for a rotation without judging it
+            // Only applies when NOT in autoplay mode
+            if (timeSincePerfectHit > toleranceSeconds && lastJudgedRotation < currentRotation)
+            {
+                healthManager.Miss();
+                floatingTextSpawner.SpawnText(transform.position + Vector3.up, $"Missed!", Color.red);
+                lastJudgedRotation = currentRotation;
+            }
         }
         
         int frameIndex = (int)(time * fps) % frames;
