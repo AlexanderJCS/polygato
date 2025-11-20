@@ -833,6 +833,14 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathUp
+      value: Cat/03DrumUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathDown
+      value: Cat/03DrumDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: polyrhythm
       value: 4
       objectReference: {fileID: 0}
@@ -845,12 +853,32 @@ PrefabInstance:
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathIntermediate
+      value: Cat/03DrumMid
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: floatingTextSpawner
       value: 
       objectReference: {fileID: 2074666253}
     - target: {fileID: 3379394421442949771, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Name
       value: 4 Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Size.x
+      value: 6.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Size.y
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4209461767521648114, guid: df6d535a16968409db0a79126a57de7e, type: 3}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7955020905733629847, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_LocalScale.x
@@ -1015,6 +1043,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 533684232578973869, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 9091a9ceb005740c8b2490d463b4eb06, type: 3}
@@ -1031,6 +1063,14 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathUp
+      value: Cat/05DrumUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathDown
+      value: Cat/05DrumDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: polyrhythm
       value: 2
       objectReference: {fileID: 0}
@@ -1043,12 +1083,32 @@ PrefabInstance:
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathIntermediate
+      value: Cat/05DrumMid
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: floatingTextSpawner
       value: 
       objectReference: {fileID: 2074666253}
     - target: {fileID: 3379394421442949771, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Name
       value: 2 Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Size.x
+      value: 6.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Size.y
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4209461767521648114, guid: df6d535a16968409db0a79126a57de7e, type: 3}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7955020905733629847, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_LocalScale.x
@@ -1175,6 +1235,14 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathUp
+      value: Cat/04DrumUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathDown
+      value: Cat/04DrumDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: polyrhythm
       value: 5
       objectReference: {fileID: 0}
@@ -1187,12 +1255,32 @@ PrefabInstance:
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathIntermediate
+      value: Cat/04DrumMid
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: floatingTextSpawner
       value: 
       objectReference: {fileID: 2074666253}
     - target: {fileID: 3379394421442949771, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Name
       value: 5 Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Size.x
+      value: 6.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Size.y
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4209461767521648114, guid: df6d535a16968409db0a79126a57de7e, type: 3}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7955020905733629847, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_LocalScale.x
@@ -1341,6 +1429,14 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathUp
+      value: Cat/02DrumUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathDown
+      value: Cat/02DrumDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: polyrhythm
       value: 6
       objectReference: {fileID: 0}
@@ -1353,12 +1449,32 @@ PrefabInstance:
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathIntermediate
+      value: Cat/02DrumMid
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: floatingTextSpawner
       value: 
       objectReference: {fileID: 2074666253}
     - target: {fileID: 3379394421442949771, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Name
       value: 6 Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Size.x
+      value: 6.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Size.y
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4209461767521648114, guid: df6d535a16968409db0a79126a57de7e, type: 3}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7955020905733629847, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_LocalScale.x
@@ -1820,6 +1936,14 @@ PrefabInstance:
       value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathUp
+      value: Cat/06DrumUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathDown
+      value: Cat/06DrumDown
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: polyrhythm
       value: 3
       objectReference: {fileID: 0}
@@ -1832,12 +1956,32 @@ PrefabInstance:
       value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: pathIntermediate
+      value: Cat/06DrumMid
+      objectReference: {fileID: 0}
+    - target: {fileID: 809451102468702738, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: floatingTextSpawner
       value: 
       objectReference: {fileID: 2074666253}
     - target: {fileID: 3379394421442949771, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_Name
       value: 3 Cat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Size.x
+      value: 6.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Size.y
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4209461767521648114, guid: df6d535a16968409db0a79126a57de7e, type: 3}
+    - target: {fileID: 6763674579414386795, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7955020905733629847, guid: 3ffbae315af544249abf10fa30e9eb5f, type: 3}
       propertyPath: m_LocalScale.x

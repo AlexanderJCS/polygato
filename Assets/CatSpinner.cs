@@ -42,8 +42,8 @@ public class CatSpinner : MonoBehaviour
         
         for (int i = 0; i < frames; i++)
         {
-            spritesUp[i] = Resources.Load<Sprite>($"{pathUp}/{(i + 1).ToString("D4")}");
-            spritesIntermediate[i] = Resources.Load<Sprite>($"{pathIntermediate}/{(i + 1).ToString("D4")}");
+            spritesUp[i] = Resources.Load<Sprite>($"{pathUp}/{(i + 1 + frames * 2).ToString("D4")}");
+            spritesIntermediate[i] = Resources.Load<Sprite>($"{pathIntermediate}/{(i + 1 + frames).ToString("D4")}");
             spritesDown[i] = Resources.Load<Sprite>($"{pathDown}/{(i + 1).ToString("D4")}");
         }
         
