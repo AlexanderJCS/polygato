@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -37,5 +38,10 @@ public class HealthManager : MonoBehaviour
     private void Update()
     {
         IncrementHealth(-decreaseRate * Time.deltaTime);
+
+        if (health < 0.001f)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }
