@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -95,6 +96,7 @@ public class GameManager : MonoBehaviour
         }
         
         beatScript.StopBeat();
+        SceneManager.LoadScene(3);
     }
     
     private void Start()

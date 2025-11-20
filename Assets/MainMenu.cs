@@ -25,19 +25,19 @@ public class MainMenu : MonoBehaviour
             case Difficulty.NORMAL:
                 currentDifficulty = Difficulty.AUTOPLAY;
                 difficultytext.text = "‹ AUTOPLAY ›";
-                //GameModeMode.gameMode = GameMode.AUTOPLAY;
+                GameGameMode.gameMode = GameMode.AUTOPLAY;
                 break;
             case Difficulty.AUTOPLAY:
                 currentDifficulty = Difficulty.FREESTYLE;
                 difficultytext.text = "‹ FREESTYLE ›";
 
-                //GameModeMode.gameMode = GameMode.FREESTYLE;
+                GameGameMode.gameMode = GameMode.FREESTYLE;
                 break;
             case Difficulty.FREESTYLE:
                 currentDifficulty = Difficulty.NORMAL;
                 difficultytext.text = "‹ NORMAL ›";
 
-                //GameModeMode.gameMode = GameMode.NORMAL;
+                GameGameMode.gameMode = GameMode.NORMAL;
                 break;
         }
     }
